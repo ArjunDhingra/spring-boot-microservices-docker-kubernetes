@@ -1,3 +1,8 @@
+FROM maven:3.6-jdk-8-alpine as build
+ADD ./ app/
+WORKDIR /app
+#RUN mvn install
+RUN mvn clean package
 # Start with a base image containing Java runtime
 FROM openjdk:8u212-jdk-slim
 
