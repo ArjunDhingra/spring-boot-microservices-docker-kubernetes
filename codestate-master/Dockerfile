@@ -12,7 +12,7 @@ LABEL maintainer="savindi.narmada@gmail.com"
 # Add a volume pointing to /tmp
 VOLUME /tmp
 
-RUN mvn clean package
+#RUN mvn clean package
 
 # Make port 8080 available to the world outside this container
 EXPOSE 8080
